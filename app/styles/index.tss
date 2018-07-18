@@ -1,0 +1,67 @@
+"Label": {
+	width: Ti.UI.SIZE,
+	height: Ti.UI.SIZE,
+	color: "#000",
+	layout: "horizontal",
+	left: 150
+}
+
+"Button": {
+	width: Ti.UI.SIZE,
+	height: Ti.UI.SIZE,
+	color: "#000"
+}
+
+".container": {
+	backgroundColor:"white"
+}
+
+".black-text": {
+	textAlign: Titanium.UI.TEXT_ALIGNMENT_LEFT,
+	color: "#000"
+}
+
+".child_parent_label_view": {
+	top: 70	
+}	
+
+"#label_one": {
+	font: {
+		fontSize: 15
+	},
+	top: 50
+}
+
+"#label_two": {
+	font: {
+		fontSize: 25
+	},
+	top: 52
+}
+
+"#label_three": {
+	font: {
+		fontSize: 30
+	},
+	top: 54
+}
+
+"#label_four": {
+	font: {
+		fontSize: 35
+	},
+	top: 56
+}
+	
+"#table_view": {
+	layout: "horizontal",
+	width: Ti.UI.FILL,
+	height: 100,
+	top: 200,
+	right: 300
+}	
+
+
+
+
+

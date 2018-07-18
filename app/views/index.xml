@@ -1,0 +1,45 @@
+<Alloy>
+    <Collection id="bookCollection" src="book" instance="true"/>
+	<Window class="container" layout="vertical">
+	    <Button id="reload_page_button" title="Reload Page"/>
+	    <Button id="close_current_page_button" title="Close Current Page"/>
+	    <Button id="click_me_button" title="Click me"/>
+
+	    <View id="parent_view">
+	        <Label id="label_one" text="A Label"/>
+	        <Label id="label_two" class="black-text" text="A Label"/>
+	        <Label id="label_three" class="black-text" text="A Label"/>
+            <Label id="label_four" text="A Label"/>
+            <Label id="label_five" text="A Label"/>
+            <Label id="label_six" text="A Label"/>
+            <Label id="label_seven" text="A Label"/>
+            <Label id="label_eight" text="A Label"/>
+            <Label id="label_nine" text="A Label"/>
+            <Label id="label_ten" text="A Label"/>
+     
+            <View id="child_parent_view_one" class="child_parent_label_view">
+                <Label id="label_eleven" text="A Child Label"/>
+                <Label id="label_twelve" text="A Child Label"/>
+                <Label id="label_thirteen" text="A Child Label"/>
+                <Label id="label_fourteen" text="A Child Label"/>
+                <Label id="label_fifteen" text="A Child Label"/>
+                <Label id="label_sixteen" text="A Child Label"/>
+                <Label id="label_seventeen" text="A Child Label"/>
+                <Label id="label_eighteen" text="A Child Label"/>
+                <Label id="label_nineteen" text="A Child Label"/>
+                <Label id="label_twenty" text="A Child Label"/>                
+            </View>
+            
+            <View id="child_parent_view_two">
+            	<SearchBar id="search_bar" showCancel="true"/>
+				<TableView id="table_view" dataCollection="$.bookCollection">
+					<TableViewRow>
+						<Label text="{title}"></Label>
+						<Label text="{year}"></Label>
+					</TableViewRow>				           	 	
+				</TableView>
+            </View>                     
+            <!-- Total element counts: Window: 1; Button: 3; Label: 25; View: 7; Tableview: 1; TableViewRow: 10; Searchbar: 1-->
+	    </View>
+	</Window>
+</Alloy>
